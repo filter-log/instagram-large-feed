@@ -10,9 +10,9 @@ GitHub Pages에서 바로 실행되는 정적 웹 앱입니다.
 
 ## 구성
 
-- `index.html`: 3 x 1, 3 x 2, 3 x 3 선택 화면
-- `row-1.html`: 3개 x 1줄 생성
-- `row-2.html`: 3개 x 2줄 생성
-- `row-3.html`: 3개 x 3줄 생성
+- `index.html`: 3x1, 3x2, 3x3 선택 화면
+- `row-1.html`: 3x1 생성
+- `row-2.html`: 3x2 생성
+- `row-3.html`: 3x3 생성
 
 브라우저에서 이미지를 합성하므로 서버가 필요 없습니다.

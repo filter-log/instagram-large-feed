@@ -186,8 +186,9 @@ figure {
 
 .mode-card {
   display: grid;
-  gap: 16px;
-  min-height: 210px;
+  grid-template-rows: 126px auto auto;
+  gap: 12px;
+  min-height: 230px;
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -203,7 +204,6 @@ figure {
 }
 
 .mode-card strong {
-  align-self: end;
   color: var(--ink);
   font-size: 22px;
   line-height: 1.15;
@@ -217,11 +217,10 @@ figure {
 
 .grid-icon {
   display: grid;
-  width: 118px;
-  height: 94px;
+  width: 96px;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
-  align-content: start;
+  align-self: start;
 }
 
 .grid-icon span {
@@ -230,14 +229,6 @@ figure {
   border: 1px solid #a9b5b1;
   border-radius: 4px;
   background: linear-gradient(135deg, #e8f3f0 0%, #ffffff 52%, #f1e8dc 100%);
-}
-
-.rows-1 {
-  height: 33px;
-}
-
-.rows-2 {
-  height: 64px;
 }
 
 .app-shell {
