@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3개 x 2줄 | Instagram Large Feed</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="generator" data-rows="2">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Instagram Large Feed home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Instagram Large Feed</span>
+    </a>
+    <nav class="mode-nav" aria-label="Grid size">
+      <a href="row-1.html">3 x 1</a>
+      <a class="is-active" href="row-2.html">3 x 2</a>
+      <a href="row-3.html">3 x 3</a>
+    </nav>
+    <p id="status" class="status" role="status">Ready</p>
+  </header>
+
+  <main class="app-shell">
+    <section class="controls" aria-label="Generator controls">
+      <form id="generator-form">
+        <div class="panel-heading">
+          <p class="eyebrow">3개 x 2줄</p>
+          <h1>Large Feed Generator</h1>
+        </div>
+
+        <fieldset>
+          <legend>Image</legend>
+          <label for="source-image">Source</label>
+          <input id="source-image" name="sourceImage" type="file" accept="image/png,image/jpeg,image/webp,image/gif,image/avif" required>
+        </fieldset>
+
+        <fieldset class="preview-field">
+          <legend>Position</legend>
+          <canvas id="source-editor" class="source-editor" width="920" height="800" aria-label="Source image position"></canvas>
+          <div class="range-row">
+            <label for="source-zoom">Zoom <span id="source-zoom-value">100%</span></label>
+            <input id="source-zoom" name="sourceZoom" type="range" min="100" max="300" step="5" value="100">
+          </div>
+          <button id="reset-source-button" class="secondary-button" type="button" disabled>Reset</button>
+        </fieldset>
+
+        <fieldset>
+          <legend>Output</legend>
+          <label for="format">Format</label>
+          <select id="format" name="format">
+            <option value="jpg" selected>JPG</option>
+            <option value="png">PNG</option>
+          </select>
+
+          <label for="quality">JPG Quality</label>
+          <input id="quality" name="quality" type="range" min="70" max="100" value="95">
+        </fieldset>
+
+        <div class="actions">
+          <button id="generate-button" class="primary-button" type="submit" disabled>Generate</button>
+          <button id="download-button" class="secondary-button" type="button" disabled>Download ZIP</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="workspace" aria-label="Generated images">
+      <div class="workspace-head">
+        <h2>Output</h2>
+        <span id="output-count">0 files</span>
+      </div>
+      <div id="results" class="results" aria-live="polite"></div>
+    </section>
+  </main>
+</body>
+</html>

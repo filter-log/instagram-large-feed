@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Instagram Large Feed</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body data-page="home">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Instagram Large Feed home">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Instagram Large Feed</span>
+    </a>
+  </header>
+
+  <main class="home-shell">
+    <section class="mode-picker" aria-labelledby="mode-title">
+      <div class="mode-head">
+        <p class="eyebrow">Feed size</p>
+        <h1 id="mode-title">생성할 그리드를 선택하세요</h1>
+      </div>
+
+      <div class="mode-grid">
+        <a class="mode-card" href="row-1.html">
+          <span class="grid-icon rows-1" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+          <strong>3개 x 1줄</strong>
+          <span>3 files</span>
+        </a>
+
+        <a class="mode-card" href="row-2.html">
+          <span class="grid-icon rows-2" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </span>
+          <strong>3개 x 2줄</strong>
+          <span>6 files</span>
+        </a>
+
+        <a class="mode-card" href="row-3.html">
+          <span class="grid-icon rows-3" aria-hidden="true">
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
+          </span>
+          <strong>3개 x 3줄</strong>
+          <span>9 files</span>
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
